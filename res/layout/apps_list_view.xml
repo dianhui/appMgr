@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/separator_line" />
+
+    <ListView
+        android:id="@+id/lv_apps_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/separator_color"
+        android:dividerHeight="2dp"
+        android:listSelector="@drawable/list_selector" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_enable_service_guide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imv_enable_service"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/enable_service"
+            android:contentDescription="@string/enable_service" />
+        
+        <TextView 
+            android:id="@+id/tv_enable_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_enable_service"
+            android:text="@string/enable_service_guide"
+            style="@style/EnableServiceGuideTextAppearence"
+            />
+        
+        <Button
+            android:id="@+id/btn_enable_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_enable_service"
+            android:layout_centerHorizontal="true"
+            android:text="@string/enable_accessibility" />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

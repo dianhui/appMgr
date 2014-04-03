@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/tab_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <!-- place holder for middle piont -->
+
+        <View
+            android:id="@+id/middle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/tab_btn_running"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/middle"
+            android:background="@drawable/tabs_selected_default"
+            android:text="@string/running"
+            android:textColor="@color/dark" />
+
+        <Button
+            android:id="@+id/tab_btn_hibernate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tab_btn_running"
+            android:layout_alignLeft="@id/middle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/tab_btn_running"
+            android:background="@drawable/tabs_unselected_default"
+            android:text="@string/hibernate"
+            android:textColor="@color/dark" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tab_btn_running"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_btn_tab_divider" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/lists_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btns"
+        android:layout_below="@+id/tab_btns"
+        android:layout_marginTop="0dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+        <!-- place holder for middle piont -->
+
+        <View
+            android:id="@+id/middle_holder"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/middle_holder"
+            android:text="@string/refresh"
+            android:textColor="@color/dark" />
+
+        <Button
+            android:id="@+id/btn_kill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/btn_refresh"
+            android:layout_alignLeft="@id/middle_holder"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/btn_refresh"
+            android:text="@string/kill_apps"
+            android:textColor="@color/dark" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppsMgr</string>
+    <string name="action_settings">Settings</string>
+    <string name="force_stop_app">Force Stop App</string>
+    <string name="kill_all_apps">Kill all apps</string>
+    <string name="accessibility_service_des">Enabling this service will grant AppsMgr the ability of clicking buttons.\n\n
+        AppsMgr will not collect any personal data and it only uses the ability to help you to click force stop button on your need.\n\n
+        Every thing is under your control and take it easy.</string>
+
+    <string name="running">Running</string>
+    <string name="hibernate">Hibernate</string>
+    <string name="refresh">Refresh</string>
+    <string name="kill_apps">Kill apps</string>
+    <string name="mb">MB</string>
+    <string name="enable_service_guide">Enable accessibility service to get enhanced functionality:
+        it will help to click "Force Stop" button for you.</string>
+    <string name="enable_accessibility">Enable Accessibility</string>
+    <string name="fail_to_start_app">Failed to start the app.</string>
+
+    <!-- content description -->
+    <string name="app_icon">Application Icon</string>
+    <string name="enable_service">Enable Service Guide Picture</string>
+</resources>
